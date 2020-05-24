@@ -16,5 +16,4 @@ public class Waypoint : SingletonMonoBehaviour<Waypoint>
             points[i] = transform.GetChild(i);
         }
     }
-
 }
