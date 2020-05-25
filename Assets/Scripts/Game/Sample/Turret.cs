@@ -55,7 +55,6 @@ namespace sample
             Vector3 dir = target.position - transform.position;
             Quaternion lookRotation = Quaternion.LookRotation(dir);
             Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
-            Debug.Log(rotation);
             partToRotate.rotation = Quaternion.Euler(0f, 0f, rotation.x);
         }
 
